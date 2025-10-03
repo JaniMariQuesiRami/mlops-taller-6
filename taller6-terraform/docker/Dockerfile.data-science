@@ -1,0 +1,15 @@
+FROM python:3.11-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    SHARED_VOLUME_PATH=/data/shared
+
+WORKDIR /app
+
+COPY app_data_science.py ./
+
+RUN pip install --no-cache-dir pandas fastapi uvicorn
+
+EXPOSE 8888
+
+CMD ["uvicorn", "app_data_science:app", "--host", "0.0.0.0", "--port", "8888"]
