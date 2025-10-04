@@ -12,7 +12,7 @@ variable "docker_volume_name" {
 
 variable "data_eng_image_name" {
   type        = string
-  default     = "taller6/data-eng"
+  default     = "jannisce2508/taller6-data-eng"
   description = "Nombre del repositorio de la imagen para el servicio de ingeniería de datos."
 }
 
@@ -24,7 +24,7 @@ variable "data_eng_image_tag" {
 
 variable "data_science_image_name" {
   type        = string
-  default     = "taller6/data-science"
+  default     = "jannisce2508/taller6-data-science"
   description = "Nombre del repositorio de la imagen para el servicio de ciencia de datos."
 }
 
