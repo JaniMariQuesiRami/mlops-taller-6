@@ -57,10 +57,12 @@ docker load -i data-science.tar
 - `docker volume ls | grep taller6`
 - `terraform output`
 
-## Enlaces TODO
-- TODO: Enlace a este repositorio en GitHub
-- TODO: Enlace opcional a Docker Hub
-- TODO: Documentación del provider Docker en Terraform: https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs
+## Enlaces
+- Repositorio en GitHub: https://github.com/JaniMariQuesiRami/mlops-taller-6
+- Imagen Docker Data Science: https://hub.docker.com/repository/docker/jannisce2508/taller6-data-science/general
+- Imagen Docker Data Eng: https://hub.docker.com/repository/docker/jannisce2508/taller6-data-eng/general
+- Documentación del provider Docker: https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs
+- Tutorial oficial Terraform + Docker: https://developer.hashicorp.com/terraform/tutorials/docker-get-started
 
 ## Conclusiones
 IaC facilita reproducibilidad total de entornos de ML porque versiona red, volúmenes e imágenes junto al código. Automatizar despliegues reduce errores manuales y acelera el time-to-data para nuevos equipos. Terraform aporta trazabilidad y revisiones por código para la infraestructura que soporta pipelines. Separar ingeniería y ciencia de datos en contenedores favorece portabilidad y escalabilidad independiente. Declarar todo en código habilita integración con CI/CD para validar y promover entornos consistentes desde desarrollo hasta producción.
